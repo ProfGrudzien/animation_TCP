@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="wireshark.css"/>
+        <link rel="stylesheet" href="Animations.css"/>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Le protocole TCP</h1>
+            <h3>1<sup>er</sup> cas : tout va bien</h3>
+            <p>
+                Dans cette situation, tous les paquets échangés sont bien reçus.
+            </p>
+            <div class="animation" id="animationTCP1">
+                <input type="button" value="▶" class="lancer"/>
+            </div>
+            <h3>2<sup>ème</sup> cas : la requête est perdue</h3>
+            <p>
+                Dans cette situation, la demande de données du serveur A n'arrive pas à destination.
+            </p>
+            <div class="animation" id="animationTCP2">
+                <input type="button" value="▶" class="lancer"/>
+            </div>
+            <h3>3<sup>ème</sup> cas : la réponse est perdue</h3>
+            <p>
+                Dans cette situation, la réponse du serveur B n'arrive pas à destination.
+            </p>
+            <div class="animation" id="animationTCP3">
+                <input type="button" value="▶" class="lancer"/>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="AnimationsTCP.js"></script>
+    </body>
+</html>
